@@ -7,6 +7,7 @@ need to run ncl eemd first to get both IMFs in AM and FM. For the example:
 ; the second part to get imfs_am
 ;
 ;%1.set initial parameters
+
    Nnormal   = 5 ; %number of spline envelope normalization for AM
    vlength   = dSizes(1)
    vlength_1 = vlength -1
@@ -33,7 +34,8 @@ need to run ncl eemd first to get both IMFs in AM and FM. For the example:
 
        dd    = ispan(0,vlength_1,1)
        upper(ni,:) = ftcurv(spmax(:,0),spmax(:,1),dd) ;; (xi, yi, 0.1, xo)
-  delete(spmax)
+
+delete(spmax)
   delete(spmin)
   delete(extvar)
     end do
