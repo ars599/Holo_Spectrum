@@ -1,5 +1,5 @@
-# Holo_Spectrum
-Holo Spectrum
+# Holo-Hilbert spectral analysis 
+HHSA
 
 # need to run ncl eemd first to get both IMFs in AM and FM. For the example:
 #
